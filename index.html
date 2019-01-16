@@ -1,0 +1,128 @@
+
+<html>
+    <head>
+        <title>Tesla</title>
+        <link href = "vectordash.css" rel= "stylesheet"  type= "text/css">
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+      <body>
+ 
+        <div class="pic1">
+  <div class="box">
+            <span></span>
+            <span></span>
+            <span></span>
+    </div>
+    <div class="wrapper">
+         
+        <a href="#">MODEL S</a></li> 
+        <a href="#">MODEL X</a></li> 
+        <a href="#">MODEL 3</a></li> 
+        <a href="#">REGISTER</a></li>
+
+    </div>
+
+
+<h5>MODEL S</h5>
+
+
+
+<div class="menu1">
+<a href="#" class="good">Order Now</a>
+<a href ="#" >Test Drive</a>
+<a href ="#" >Learn More</a>
+<a href ="#" >Shop Inventory</a>
+</div>
+  
+<div class="menu1a">
+<a href ="#" >Order Now</a> 
+<a href ="#" >Test Drive</a>
+<a href ="#" >Learn More</a>
+<a href ="#" >Shop Inventory</a>
+</div>
+<div class= "sidebar">
+    <ul class="bad">
+        <li><a href="#">MODEL X</a></li>
+        <li><a href="#">MODEL S</a></li>
+        <li><a href="#">MODEL 3</a></li>
+        <li><a href="#">ENERGY</a></li>
+        <li><a href="#">GET NEWSLETTER</a></li>
+        <li><a href="#">SHOP</a></li>
+        <li><a href="#">SIGN IN</a></li>
+        <li><a href="#">NEWS</a></li>
+        <li><a href="#">NEWS INVENTORY</a></li>
+        <li><a href="#">USED INVENTORY</a></li>
+        <li><a href="#">CHARGING</a></li>
+        <li><a href="#">FIND US</a></li>
+        <li><a href="#">SEMI</a></li>
+        <li><a href="#">CARBON IMPACT</a></li>
+        <li><a href="#">SUPPORT</a></li>
+    </ul>
+    <ul class="good">
+        <li><a href="#">NEWS</a></li>
+        <li><a href="#">NEWS INVENTORY</a></li>
+        <li><a href="#">USED INVENTORY</a></li>
+        <li><a href="#">CHARGING</a></li>
+        <li><a href="#">FIND US</a></li>
+        <li><a href="#">SEMI</a></li>
+        <li><a href="#">CARBON IMPACT</a></li>
+        <li><a href="#">SUPPORT</a></li>
+    </ul>
+    <button class="sidebarBtn">
+      <span></span>
+    </button>
+</div>
+</div>
+<div class="pic2">
+<h5 class="big">MODEL X</h5>
+
+<div class="menu2">
+<a href ="#" class="good">Order Now</a>
+<a href ="#" >Test Drive</a>
+<a href ="#" >Learn More</a>
+<a href ="#" >Shop Inventory</a>
+</div>
+<div class="menu1a2">
+<a href ="#" >Order Now</a> 
+<a href ="#" >Test Drive</a>
+<a href ="#" >Learn More</a>
+<a href ="#" >Shop Inventory</a>
+</div>
+</div>
+<div class="pic3">
+<h5 class="big2">MODEL 3</h5>
+<div class="menu3">
+<a href ="#" class="good" >Order Now</a>
+<a href ="#" >Test Drive</a>
+<a href ="#" >Learn More</a>
+
+</div>
+<div class="menu1a3">
+<a href ="#" >Order Now</a> 
+<a href ="#" >Test Drive</a>
+<a href ="#" >Learn More</a>
+<a href ="#" >Shop Inventory</a>
+</div>
+</div>
+ <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+<script>
+   function toggleSidebar(){
+       document.getElementById("sidebar").classList.toggle('active');
+   }
+    $(document).ready(function(){
+        $('.sidebarBtn').click(function(){
+            $('.sidebar').toggleClass('active');
+            $('.sidebarBtn').toggleClass('toggle');
+        })
+    })
+    
+    $(document).ready(function(){
+        $('.sidebar_btn').click(function(){
+            $('.sidebar2').toggleClass('active');
+        $('.sidebar_btn').toggleClass('toggle_is');
+        })
+    })
+</script>
+</body>
+</html>
