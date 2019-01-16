@@ -1,0 +1,761 @@
+body{
+ 
+    margin: 0;
+    padding: 0;
+    overflow-x:hidden;
+    }
+@viewport 
+{
+  width: device-width;
+}
+
+@-ms-viewport
+{
+  width: device-width;
+}
+
+.pic1
+{
+    background-image: url(homepage-models.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    overflow-x: hidden;
+    min-height: 100%;
+}
+
+.wrapper
+{
+	display: flex;
+	justify-content: center;
+	margin: 0 auto;
+}
+
+.wrapper a
+{
+	text-decoration: none;
+	color: white;
+	font-family: "Comic san MS" , sans-serif ;
+	margin: 10 10;
+	font-weight: bold;
+	justify-content: center;
+}
+
+.wrapper a:hover
+{
+	color:  lightgrey;
+	transition: all 0.2s ease-in ;
+}
+
+
+
+
+
+.tag
+{
+    position: absolute;
+    top: 40%;
+    left: 12%;
+    width: 100%;
+    
+}
+.tag a
+{
+    position: relative;
+    text-decoration: none;
+    border-radius:100px;
+    border: 3px solid #222f3e;
+    font-family: "Comic san MS" , sans-serif ;
+    text-align: center;
+    margin-right: 7px;
+    color: white;
+    padding: 14 70 ;
+    font-size: 15px;
+    font-weight: bold;
+    overflow: hidden;
+    text-transform: uppercase;
+    background-color: #222f3e;
+}
+
+.tag a:hover{
+    background-color: black;
+    border: 3px solid black;
+    transition: all 0.2s ease-in;
+}
+.menu1
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   
+
+    
+}
+
+.menu1 a
+{
+    position: relative;
+    text-decoration: none;
+    border-radius:100px;
+    border: 3px solid #222f3e;
+    font-family: "Comic san MS" , sans-serif ;
+    text-align: center;
+    margin-right: 7px;
+    color: #222f3e;
+    padding: 14 70 ;
+    font-size: 15px;
+    font-weight: bold;
+    overflow: hidden;
+    text-transform: uppercase;
+
+}
+ 
+a.good
+{
+	background-color: #222f3e;
+	color: white;
+}
+    
+.menu1  a:hover
+{
+    
+    background-color: black;
+    color: white;
+    border: 3px solid black;
+    transition: all 0.2s ease-in;
+    
+}
+
+
+.menu1a
+{
+    display: none;
+}
+.menu1a a:hover
+{
+    background-color: black;
+    color:white;
+    border: 3px solid black;
+}
+h5
+{
+   color: #222f3e;
+   text-transform: uppercase;
+   font-size: 50px;
+   text-align: center;
+   position: relative;
+   top: 10%;
+   display: flex;
+   justify-content: center;
+   font-family: "Proxima Nova Soft","Helvetica Neue",sans-serif;
+   
+}
+.box
+{
+    position: absolute;
+    top: 90%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+.box span
+{
+    display: block;
+    width: 20px;
+    height: 20px;
+    border-bottom: 5px solid #fff;
+    border-right: 5px solid #fff;
+    margin: -10px;
+    transform: rotate(45deg);
+    animation: animate 2s infinite;
+}
+
+.box span:nth-child(2)
+{
+    animation-delay: -0.2s;
+}
+.box span:nth-child(3)
+{
+    animation-delay: -0.4s;
+}
+@keyframes animate
+{
+    0%
+    {
+        opacity: 0;
+        transform: rotate(45deg) translate(-20px,-20px);
+    }
+    50%
+    {
+        opacity: 1;
+    }
+    100%
+    {
+        opacity: 0;
+        transform: rotate(45deg) translate(20px,20px);
+    }
+}
+
+.sidebar
+{
+    position: fixed;
+    top: 0;
+    left: -250px;
+    background: white;
+    width: 250px;
+    height: 100%;
+    transition: .3s;
+    z-index: 2;
+   
+}
+.active
+{
+    left: 0px;;
+}
+ul
+{
+    margin: 0;
+    padding: 20px 0;
+}
+ul li
+{
+    list-style: none;
+}
+ul li a
+{
+    padding: 10px 30px;
+    color: black;
+    display: block;
+    text-decoration: none;
+    border-bottom: 1px solid rgba(0,0,0,.2);
+    font-family: "Comic san MS" , sans-serif ;
+    font-weight: bold;
+}
+.bad
+{
+    display: none;
+}
+.sidebarBtn
+{
+    position: absolute;
+    top: 0;
+    right: -50px;
+    width: 50px;
+    height: 5opx;
+    box-sizing: border-box;
+    cursor: pointer;
+    background: transparent;
+    border: none;
+    outline: none;
+    
+}
+
+.sidebarBtn span
+{
+    display: block;
+    width: 35px;
+    height: 5px;
+    background: white;
+    position: absolute;
+    border-radius: 10px;
+    top:24px;
+    transition: .3s;
+}
+
+.sidebarBtn span:before
+{
+    content: '';
+    position: absolute;
+    top: -10px;
+    left: 0;
+    width: 100%;
+    height: 5px;
+    background: white;
+    transition: .3s;
+    border-radius: 10px;
+}
+.sidebarBtn span:after
+{
+    content: '';
+    position: absolute;
+    top: 10px;
+    left: 0;
+    width: 100%;
+    height: 5px;
+    background: white;
+    transition: .3s;
+    border-radius: 10px;
+}
+
+.sidebarBtn.toggle span
+{
+    background: transparent;
+}
+
+.sidebarBtn.toggle span:before
+{
+    top: 0px;
+    background-color: black;
+    transform: rotate(45deg);
+}
+.sidebarBtn.toggle span:after
+{
+    top: 0px;
+    transform: rotate(-45deg);
+    background-color: black;
+}
+
+
+.pic2
+{
+    background-image: url(homepage-modelx.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    overflow-x: hidden;
+    min-height: 100%;
+}
+
+.tag2
+{
+    position: absolute;
+    top: 130%;
+    left: 13%;
+    
+}
+
+.tag2 a
+{
+    position: relative;
+    text-decoration: none;
+    border-radius:100px;
+    border: 3px solid #222f3e;
+    font-family: "Comic san MS" , sans-serif ;
+    text-transform: uppercase;
+    text-align: center;
+    margin-right: 7px;
+    color: white;
+    padding: 14 70 ;
+    font-size: 15px;
+    font-weight: bold;
+    overflow: hidden;
+    background-color: #222f3e;
+    
+}
+
+.tag2 a:hover
+{
+    background-color: black;
+    border: 3px solid black;
+    transition: all 0.2s ease-in;
+
+}
+.menu2
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+     
+}
+.menu2 a
+{
+    position: relative;
+    text-decoration: none;
+    border-radius:100px;
+    border: 3px solid #222f3e;
+    font-family: "Comic san MS" , sans-serif ;
+    text-transform: uppercase;
+    text-align: center;
+    margin-right: 7px;
+    color: #222f3e;
+    padding: 14 70 ;
+    font-size: 15px;
+    font-weight: bold;
+    overflow: hidden;
+}
+
+a.good
+{
+	color: white;
+}
+.menu2   a:hover
+{
+    background-color: black;
+    color:white;
+    border: 3px solid black;
+    transition: all 0.2s ease-in;
+}
+
+.menu1a2
+{
+    display: none;
+}
+.menu1a2 a:hover
+{
+    background-color: black;
+    color: white;
+    border: 3px solid black;
+}
+
+.big
+{
+    position: relative;
+    top: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.pic3
+{
+    background-image: url(homepage-model3.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    overflow-x: hidden;
+    min-height: 100%;
+}
+
+.tag3
+{
+    position: absolute;
+    top: 228%;
+    left: 25%;
+    
+}
+
+.tag3 a
+{
+    position: relative;
+    text-decoration: none;
+    border-radius:100px;
+    border: 3px solid #222f3e;
+    font-family: "Comic san MS" , sans-serif ;
+    text-transform: uppercase;
+    text-align: center;
+    margin-right: 7px;
+    color: white;
+    padding: 14 70 ;
+    font-size: 15px;
+    font-weight: bold;
+    overflow: hidden;
+    background-color: #222f3e;
+    
+}
+
+.tag3 a:hover
+{
+    background-color: black;
+    border: 3px solid black;
+    transition: all 0.2s ease-in;
+
+}
+
+.menu3
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+     
+}
+.menu3 a
+{
+    position: relative;
+    text-decoration: none;
+    border-radius:100px;
+    border: 3px solid #222f3e;
+    font-family: "Comic san MS" , sans-serif ;
+    text-transform: uppercase;
+    text-align: center;
+    margin-right: 7px;
+    color: #222f3e;
+    padding: 14 70 ;
+    font-size: 15px;
+    font-weight: bold;
+    overflow: hidden;
+}
+
+a.good
+{
+	color: white;
+}
+.menu3   a:hover
+{
+    background-color: black;
+    color:white;
+    border: 3px solid black;
+    transition: all 0.2s ease-in;
+}
+.menu1a3
+{
+    display: none;
+}
+.menu1a3 a:hover
+{
+    background-color: black;
+    color: white;
+    border: 3px solid black;
+}
+.big2
+{
+    position: relative;
+    top: 200%
+    display:flex;
+    justify-content: center;
+}
+@media only screen and (max-width: 700px)
+{
+
+	.wrapper
+	{
+      display: none;
+     
+	}
+	label
+    {
+    display: block;
+    cursor: pointer;
+        
+    }
+    
+    .menu1
+    {
+    display: grid;
+    position: absolute;
+    left: 4px;
+    display: none;
+    }
+    
+    .tag
+    {
+    display: none;
+    }
+    .taga
+    {
+    display: grid;
+    position: absolute;
+    top:41% ;
+    left: -1%%;
+    }
+    
+     .taga a
+    {
+    position: relative;
+    text-decoration: none;
+    border-radius:100px;
+    border: 3px solid white;
+    font-family: "Comic san MS" , sans-serif ;
+    margin: 5px;
+    text-align: center;
+    margin-right: 7px;
+    color: black;
+    padding: 10 80 ;
+    font-size: 15px;
+    font-weight: bold;
+    overflow: hidden;
+    text-transform: uppercase;
+    background-color: white;
+    } 
+    
+    .menu1 a
+    {
+    border-radius:100px;
+    border: 2px solid black;
+    font-family: "Comic san MS" , sans-serif ;
+    text-align: center;
+    padding-top: 2px;
+    margin-top: 10px;
+    color: black;
+    padding: 10 10 ;
+    font-size: 15px;
+    font-weight: bold;
+
+    
+    } 
+    
+   .menu1a
+    {
+       display: flex;
+       flex-flow: column;
+       position: relative;
+       top: 80px;
+       height: 200px;
+       justify-content: center;
+       align-items: center;
+        
+    }
+    .menu1a a
+    {
+    
+    text-decoration: none;
+    border-radius:100px;
+    border: 3px solid white;
+    font-family: "Comic san MS" , sans-serif ;
+    margin: 5px;
+    text-align: center;
+    margin-right: 7px;
+    color: black;
+    padding:10 90;
+    font-size: 15px;
+    font-weight: bold;
+    overflow: hidden;
+    text-transform: uppercase;
+    background-color: white;
+    width: 150px;
+    flex: 2 2 2;
+    } 
+    .menu1a a: hover
+    {
+    background-color: black;
+    color: white;
+    }
+    
+    .menu2
+    {
+    display: none;
+    }
+    .menu1a2
+    {
+       display: flex;
+       flex-flow: column;
+       position: relative;
+       top: 80px;
+       height: 200px;
+       justify-content: center;
+       align-items: center;
+    }
+    .menu1a2 a
+    {
+    position: relative;
+    text-decoration: none;
+    border-radius:100px;
+    border: 3px solid white;
+    font-family: "Comic san MS" , sans-serif ;
+    margin: 5px;
+    text-align: center;
+    margin-right: 7px;
+    color: black;
+    padding: 10 90 ;
+    font-size: 15px;
+    font-weight: bold;
+    overflow: hidden;
+    text-transform: uppercase;
+    background-color: white;
+    width: 150px;
+    }
+    
+    .tag3
+    {
+        display: none;
+    }
+    
+    .menu3
+    {
+        display: none;
+    }
+    
+      .menu1a3
+    {
+       display: flex;
+       flex-flow: column;
+       position: relative;
+       top: 80px;
+       height: 200px;
+       justify-content: center;
+       align-items: center;
+    }
+    .menu1a3 a
+    {
+    position: relative;
+    text-decoration: none;
+    border-radius:100px;
+    border: 3px solid white;
+    font-family: "Comic san MS" , sans-serif ;
+    margin: 5px;
+    text-align: center;
+    margin-right: 7px;
+    color: black;
+    padding: 10 90 ;
+    font-size: 15px;
+    font-weight: bold;
+    overflow: hidden;
+    text-transform: uppercase;
+    background-color: white;
+    width: 150px;
+    }
+    .tag2
+    {
+    display: none;
+    }
+    h5
+    {
+    position: relative;
+    top: 30%;
+    display: flex;
+    justify-content: center;
+    }
+   
+    
+    body
+    {
+    background-attachment: fixed;
+    background-size: contain;
+    overflow-x: hidden;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+    }
+    
+ 
+    .menu
+    {
+    display: none;
+    }
+    .nav
+    {
+    display: none;
+    }
+    
+    .boss
+    {
+    display: none;
+    }
+    .logo img
+    {
+    display: none;
+    }
+    
+    .sidebar_btn
+    {
+    display: contents;
+    }
+    .bad
+    {
+    display: contents;
+    }
+    .good
+    {
+    display: none;
+    }
+    .box span
+    {
+    display: block;
+    width: 10px;
+    height: 10px;
+    border-bottom: 2px solid #fff;
+    border-right: 2px solid #fff;
+    margin: -10px;
+    transform: rotate(45deg);
+    animation: animate 2s infinite;
+    }
+    
+    @viewport
+    {
+        zoom: 1.0;
+        width: device-width;
+    }
+    
+}
+
+
+    
